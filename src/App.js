@@ -1,8 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
+
+import AbForm from './components/AbFrom';
+import info from './info.json'
+import Form from './screen/Form'
+
 import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
+class App extends Component {
+
+  render() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -10,17 +19,12 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <AbForm />
+      {/* <Form {...test}/> */}
     </div>
   );
+}
 }
 
 export default App;
